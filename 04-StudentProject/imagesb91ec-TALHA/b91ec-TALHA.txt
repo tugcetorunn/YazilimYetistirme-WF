@@ -1,0 +1,4 @@
+Adı: talha
+Soyadı: torun
+Cinsiyeti: Erkek
+Bölümü: Endüstri Mühendisliği

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblKullanici = new System.Windows.Forms.Label();
             this.btnBasla = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -37,12 +38,14 @@
             this.txtTahmin = new System.Windows.Forms.TextBox();
             this.lblTahmin = new System.Windows.Forms.Label();
             this.lblBilgi = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblKullanici
             // 
             this.lblKullanici.AutoSize = true;
+            this.lblKullanici.ForeColor = System.Drawing.Color.Black;
             this.lblKullanici.Location = new System.Drawing.Point(31, 21);
             this.lblKullanici.Name = "lblKullanici";
             this.lblKullanici.Size = new System.Drawing.Size(0, 15);
@@ -57,7 +60,7 @@
             this.btnBasla.TabIndex = 1;
             this.btnBasla.Text = "Oyunu Başlat";
             this.btnBasla.UseVisualStyleBackColor = true;
-            this.btnBasla.Click += new System.EventHandler(this.btnBasla_Click_1);
+            this.btnBasla.Click += new System.EventHandler(this.btnBasla_Click);
             // 
             // panel1
             // 
@@ -101,6 +104,7 @@
             this.btnTahmin.TabIndex = 3;
             this.btnTahmin.Text = "Tahmin Et";
             this.btnTahmin.UseVisualStyleBackColor = false;
+            this.btnTahmin.Click += new System.EventHandler(this.btnTahmin_Click);
             // 
             // txtTahmin
             // 
@@ -128,6 +132,10 @@
             this.lblBilgi.Size = new System.Drawing.Size(33, 15);
             this.lblBilgi.TabIndex = 0;
             this.lblBilgi.Text = "Bilgi:";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // OyunForm
             // 
@@ -158,6 +166,7 @@
         private ProgressBar progressBar1;
         private Button btnTahmin;
         private TextBox txtTahmin;
+        private System.Windows.Forms.Timer timer1;
         //private Label lblKullanici;
         //private Button btnBasla;
         //private Panel panel1;

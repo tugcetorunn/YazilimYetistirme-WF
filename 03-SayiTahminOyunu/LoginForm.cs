@@ -11,9 +11,9 @@
 
         private void btnGiris_Click(object sender, EventArgs e) // önce oyun ekranı gelecek, başla deyince önce giriş forma aktarak ismi alacak oyuna öyle naşlanacak.
         {
-            string name = txtKullaniciAdi.Text;
+            _name = txtKullaniciAdi.Text;
 
-            if (name != null)
+            if (_name != null)
             {
                 this.Hide();
             }
